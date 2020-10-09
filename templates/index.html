@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Student</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <h1>Student table</h1>
+    <table id="tablespec">
+      <tr>
+        <th>name</th>
+        <th>age</th>
+        <th>email</th>
+        <th>actions</th>
+      </tr>
+      <tbody id="bodytable">
+        {% for s in student %}
+        <tr>
+          <td>{{ s.name }}</td>
+          <td>{{ s.age }}</td>
+          <td>{{ s.email }}</td>
+          <td>
+            <a href="/edit/{{ s.id }}/">Edit</a>
+            <a href="/delete/{{ s.id }}/">Delete</a>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <button id="index" type="button" name="button">
+      <a href="/register/">Register student</a>
+    </button>
+  </body>
+</html>

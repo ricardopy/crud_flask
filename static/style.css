@@ -1,0 +1,38 @@
+body{
+  font-family: Arial;
+}
+
+h1 {
+  color: #606060;
+}
+
+table#tablespec {
+  border: 1px solid #606060;
+  border-spacing: 0px;
+}
+
+table#tablespec th {
+  border: 1px solid #606060;
+}
+
+tbody#bodytable td {
+  border: 1px solid #606060;
+}
+
+button#index {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+button#index a {
+  color: #606060;
+  text-decoration: none;
+}
+
+label {
+  color: #606060;
+}
+
+button#register {
+  color: #606060;
+}
